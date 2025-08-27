@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Welcome Team – CpE Day 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#7c3aed;
+      --accent-2:#06b6d4;
+      --muted:#9aa4b2;
+      --white:#f8fafc;
+      --glass: rgba(255,255,255,0.03);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--white);background:linear-gradient(180deg,var(--bg),#071029);}
+    .stage{max-width:1100px;margin:36px auto;padding:28px;border-radius:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 10px 30px rgba(2,6,23,0.6);}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+    header .title{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+    .logo{width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:800;color:white;font-size:22px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:0;color:var(--muted)}
+
+    .slides{position:relative;margin-top:22px;min-height:520px}
+    .slide{display:none;padding:36px;border-radius:12px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));backdrop-filter:blur(6px);}
+    .slide.active{display:block}
+
+    .slide h2{margin:0 0 10px 0;font-size:28px;letter-spacing:-0.5px}
+    .slide .subtitle{color:var(--muted);margin-bottom:18px}
+
+    .two-col{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
+    .center{display:flex;align-items:center;justify-content:center}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-weight:600}
+    ul.clean{padding-left:18px;color:var(--muted);line-height:1.6}
+    .event-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .card{background:rgba(255,255,255,0.02);padding:14px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+
+    .controls{display:flex;align-items:center;gap:10px;margin-top:18px;flex-wrap:wrap;}
+    .btn{padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none;color:white;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);font-weight:600}
+    .pager{color:var(--muted);margin-left:auto}
+
+    .notes{margin-top:14px;color:var(--muted);font-size:13px}
+
+    /* Responsive: Tablet */
+    @media (max-width:880px){
+      .two-col{grid-template-columns:1fr}
+      .slide{padding:22px}
+      .stage{margin:18px}
+      .slides{min-height:320px}
+    }
+
+    /* Responsive: Mobile */
+    @media (max-width:600px){
+      .stage{padding:8px;margin:0;border-radius:0;}
+      header{flex-direction:column;align-items:flex-start;gap:8px;}
+      header .title{flex-direction:column;align-items:flex-start;gap:6px;}
+      .logo{width:48px;height:48px;font-size:16px;}
+      h1{font-size:17px;}
+      .slide{padding:10px;border-radius:8px;}
+      .slide h2{font-size:20px;}
+      .event-grid{grid-template-columns:1fr;}
+      .controls{flex-direction:column;gap:8px;}
+      .btn{width:100%;padding:12px 0;font-size:16px;}
+      .pager{margin-left:0;}
+    }
+
+    /* Print-friendly single-slide per page */
+    @media print{
+      body{background:white;color:black}
+      .stage{box-shadow:none;background:white}
+      .slide{page-break-after:always}
+      .controls,header{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="stage" role="application" aria-label="CpE Day 2026 Presentation">
+    <header>
+      <div class="title">
+        <div class="logo">CpE</div>
+        <div>
+          <h1>Welcome Team – CpE Day 2026</h1>
+          <p class="lead">hi guys baka gusto nyo mag mr. and mrs. cpe</p>
+        </div>
+      </div>
+      <div class="meta center">
+        <span class="badge">Team Leader: CHRISTIAN D. NICOLAS</span>
+      </div>
+    </header>
+
+    <div class="slides" id="slides">
+      <!-- Slide 1: Title -->
+      <section class="slide active" data-slide="1">
+        <div class="two-col">
+          <div>
+            <h2>Welcome Team — CpE Day 2026</h2>
+            <p class="subtitle">Together we make this the best CpE Day experience!</p>
+            <p style="margin-top:18px;color:var(--muted)">Presented by: <strong>Christian</strong><br>Team Leader</p>
+            <div class="card" style="margin-top:22px;">
+              Good day team! As your leader for our CpE Day, I want to officially welcome all of you to this exciting celebration. We’ve got a lot of events ahead—some will test our talents, others our teamwork—but what matters most is that we face them together as one strong group.<br><br>
+              I don’t want us to focus only on winning. Of course, if we win, that’s a great bonus—but the real victory is the fun, the friendships, and the experiences we’ll share. Let’s give our best effort, support one another, and represent our team with pride and energy.<br><br>
+              So let’s make this the best CpE Day we’ve ever had—full of teamwork, laughter, and memories. Let’s enjoy every moment and show everyone the true spirit of our group. We got this!
+            </div>
+          </div>
+          <div class="center">
+            <div style="text-align:center">
+              <div style="font-size:78px;font-weight:800;letter-spacing:2px;color:var(--accent);">CP E</div>
+              <p style="margin-top:6px;color:var(--muted)">One Team, One Spirit, One CpE</p>
+            </div>
+          </div>
+        </div>
+        <div class="notes">Speaker note: Welcome everyone, give a quick introduction of yourself and the purpose of the meeting.</div>
+      </section>
+
+      <!-- Slide 2: Vision & Motto -->
+      <section class="slide" data-slide="2">
+        <h2>Our Vision &amp; Motto</h2>
+        <p class="subtitle">What drives our team</p>
+        <div class="card" style="margin-bottom:14px">
+          <strong>Vision</strong>
+          <p class="subtitle" style="margin:6px 0 0 0;color:var(--muted)">To enjoy, learn, and grow as one team while representing CpE proudly.</p>
+        </div>
+        <div class="card">
+          <strong>Motto</strong>
+          <p style="margin:8px 0 0 0;font-size:20px;color:var(--accent);font-weight:700">“One Team, One Spirit, One CpE!”</p>
+        </div>
+        <div class="notes">Note: Invite a volunteer to read the motto aloud for energy.</div>
+      </section>
+
+      <!-- Slide 3: Purpose -->
+      <section class="slide" data-slide="3">
+        <h2>Purpose of Our Team</h2>
+        <ul class="clean">
+          <li>Represent our group in all CpE Day events</li>
+          <li>Showcase our talents, teamwork, and school pride</li>
+          <li>Enjoy, learn, and create memorable experiences</li>
+        </ul>
+        <div class="notes">Tip: emphasize "experience" and "teamwork"—not only winning.</div>
+      </section>
+
+      <!-- Slide 4: Benefits -->
+      <section class="slide" data-slide="4">
+        <h2>Benefits of Joining</h2>
+        <div class="event-grid">
+          <div class="card"><strong>Gain new experiences</strong><p class="subtitle">Try something different and grow.</p></div>
+          <div class="card"><strong>Build confidence & teamwork</strong><p class="subtitle">Practice, perform, and support.</p></div>
+          <div class="card"><strong>Make lasting memories</strong><p class="subtitle">Moments you won't forget.</p></div>
+          <div class="card"><strong>Chance to win & bring pride</strong><p class="subtitle">Compete with heart.</p></div>
+        </div>
+      </section>
+
+      <!-- Slide 5: Events List -->
+      <section class="slide" data-slide="5">
+        <h2>Events: Where Will You Shine?</h2>
+        <p class="subtitle">As we get ready for our upcoming CpE Day, I’ll be finalizing our participants for each event. Below is the list of contests we need to join.</p>
+        <div class="card" style="margin-bottom:18px;">
+          If you’re interested in a specific event, kindly let me know so I can include you in the lineup. Don’t worry if you’re not sure where to join—I can help match you to the event where your skills and interests fit best.<br><br>
+          💡 <strong>Remember:</strong> This is not just about winning—it’s about enjoying, learning, and experiencing the best CpE Day together!
+        </div>
+        <ul class="clean">
+          <li><strong>Mr. &amp; Ms. CpE</strong> (Male + Female)</li>
+          <li><strong>General Quiz Bowl</strong> (3 members)</li>
+          <li><strong>Vocal Solo</strong> (1 member)</li>
+          <li><strong>MTV Girl &amp; Boy Group</strong> (5–6 members)</li>
+          <li><strong>E-sports: Mobile Legends</strong> (1 full team of 5)</li>
+          <li><strong>Bench Yell Presentation</strong> (20 members – everyone can join!)</li>
+          <li><strong>CpE Placard Presentation</strong> (2 presenters + 3 makers)</li>
+          <li><strong>CpEvesta 2026 Jingle Writing &amp; Performance</strong> (10 members)</li>
+        </ul>
+        <div class="card" style="margin-top:18px;">
+          Feel free to message me your interest or ask questions. Let’s all take part, have fun, and make this the best CpE Day ever!
+        </div>
+      </section>
+
+      <!-- Slide 6: Call for Participants -->
+      <section class="slide" data-slide="6">
+        <h2>Call for Participants</h2>
+        <p class="subtitle">We need volunteers for each event!</p>
+        <div class="card">
+          <p>Encourage: Win or lose, what matters is we enjoy and experience CpE Day!</p>
+          <p style="margin-top:8px;color:var(--muted)"><strong>Message me</strong> or raise your hand today if interested.</p>
+          <hr style="margin:18px 0;border:0;border-top:1px solid var(--glass);">
+          <p style="color:var(--white);margin-bottom:8px;">
+            Since CpE Day is fast approaching, we need to have a short face-to-face meeting to finalize our participants and start preparing for the events.<br><br>
+            To make sure everyone can join, please reply with your available times and vacant schedules (day and time) this week. Once I see your responses, I’ll set the earliest possible schedule that works best for most of us.<br><br>
+            This meeting is important so we can:<br>
+            ✅ Assign participants to events<br>
+            ✅ Plan practices and preparation<br>
+            ✅ Make sure everyone knows their role<br><br>
+            Please reply as soon as you can so we can meet and start preparing together. Thank you!
+          </p>
+        </div>
+      </section>
+
+      <!-- Slide 7: Support Roles -->
+      <section class="slide" data-slide="7">
+        <h2>Support Roles</h2>
+        <p class="subtitle">Even if not a main participant, you can still help!</p>
+        <div class="event-grid">
+          <div class="card">✨ <strong>Cheer squad / audience energy</strong></div>
+          <div class="card">🎨 <strong>Props & costume makers</strong></div>
+          <div class="card">🛠️ <strong>Logistics & preparation</strong></div>
+          <div class="card">🤝 <strong>Coordination & backstage help</strong></div>
+        </div>
+        <div class="notes">Call out specific people if you already have volunteers.</div>
+      </section>
+
+      <!-- Slide 8: Meeting & Coordination -->
+      <section class="slide" data-slide="8">
+        <h2>Meeting &amp; Coordination</h2>
+        <ul class="clean">
+          <li>We need a Face-to-Face Meeting</li>
+          <li>To finalize participants</li>
+          <li>To assign roles & responsibilities</li>
+          <li>To plan practices</li>
+        </ul>
+      </section>
+
+      <!-- Slide 9: Scheduling -->
+      <section class="slide" data-slide="9">
+        <h2>Scheduling</h2>
+        <p class="subtitle">Please send me your vacant schedules (day &amp; time) so we can meet as soon as possible.</p>
+        <div class="card">
+          <p>Collect through:</p>
+          <ul class="clean">
+            <li>Group chat replies</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 10: Practice & Preparation -->
+      <section class="slide" data-slide="10">
+        <h2>Practice &amp; Preparation (Preview)</h2>
+        <ul class="clean">
+          <li>Short, focused practice schedules will be set</li>
+          <li>Each team will get guidance and support</li>
+          <li>Regular updates in GC</li>
+        </ul>
+      </section>
+
+      <!-- Slide 11: Closing Motivation -->
+      <section class="slide" data-slide="11">
+        <h2>Motivation</h2>
+        <p style="font-size:18px;color:var(--accent);font-weight:700">"Together, we’ll make this CpE Day unforgettable. Let’s give our best, support each other, and enjoy every moment!"</p>
+        <p class="subtitle" style="margin-top:12px">Optional Quote:</p>
+        <blockquote style="margin:6px 0 0 0;color:var(--muted);font-style:italic">“Great teams are not about individual talent, but about working together.”</blockquote>
+      </section>
+
+    </div>
+
+    <div class="controls" role="navigation" aria-label="Slide navigation">
+      <button class="btn ghost" id="prev">◀ Previous</button>
+      <button class="btn" id="next">Next ▶</button>
+      <div class="pager" id="pager">Slide <span id="cur">1</span> / <span id="total">11</span></div>
+      <button class="btn ghost" id="print">Print / PDF</button>
+    </div>
+
+  </div>
+
+  <script>
+    (function(){
+      const slides = Array.from(document.querySelectorAll('.slide'));
+      const total = slides.length;
+      let idx = 0;
+      const curEl = document.getElementById('cur');
+      const totalEl = document.getElementById('total');
+      totalEl.textContent = total;
+
+      function show(i){
+        slides.forEach(s=>s.classList.remove('active'));
+        slides[i].classList.add('active');
+        idx = i;
+        curEl.textContent = (idx+1);
+      }
+      document.getElementById('prev').addEventListener('click', ()=> show((idx-1+total)%total));
+      document.getElementById('next').addEventListener('click', ()=> show((idx+1)%total));
+      document.addEventListener('keydown', (e)=>{
+        if(e.key==='ArrowRight') show((idx+1)%total);
+        if(e.key==='ArrowLeft') show((idx-1+total)%total);
+        if(e.key==='Home') show(0);
+        if(e.key==='End') show(total-1);
+      });
+      document.getElementById('print').addEventListener('click', ()=> window.print());
+
+      // Quick tap to toggle notes visibility (for presenter)
+      slides.forEach(s=>{
+        s.addEventListener('dblclick', ()=>{
+          const n = s.querySelector('.notes');
+          if(n) n.style.display = (n.style.display==='none')? 'block' : 'none';
+        });
+      });
+
+      // Initialize
+      show(0);
+    })();
+  </script>
+</body>
+</html>
